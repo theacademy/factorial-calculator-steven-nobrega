@@ -39,8 +39,9 @@ public class Factorial {
         if (this.scanner.hasNextInt()) {
             this.num = this.scanner.nextInt();
 			// Checking if input is between 1 and 10
-            if (num >= 1 && num <= 10)
-                return num;
+            if (this.num >= 1 && this.num <= 10) {
+				return this.num;
+			}
         } else {
 			// Consume the invalid non-integer token so the scanner does not get stuck
 			this.scanner.next();
